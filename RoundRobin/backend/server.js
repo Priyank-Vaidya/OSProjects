@@ -1,20 +1,30 @@
 const mysql = require('mysql');
+const express= require('express');
 require('dotenv').config();
+const mongoose = require('mongoose');
+const cors = require('cors');
 
-const connection = mysql.createConnection({
-    host: 'localhost',
-    port: process.env.PORT,
-    database: 'osproject',
-    user: process.env.USER,
-    password: process.env.PASSWORD
-});
+const app = express();
+const route = require('./route');
 
-connection.connect(async(req,res, err)=>{
+
+app.use(express.json());
+app.use(express.urlencoded({extended: true}))
+
+app.use('/api/v1', route);
+
+mongoose.set('strictQuery', true);
+mongoose.connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+},
+(err)=>{
     if(err){
-       res.send(err);
+        console.log(err)
+    }else{
+        app.listen(process.env.PORT, ()=>{
+            console.log("Server Running at port 5000");
+        })
     }
-    else{
-        console.log("Connection Successful");
-    
-    }
-})
+}
+)
