@@ -55,9 +55,9 @@ export default function BasicModal({ open, handleClose }) {
                                     </ListItem>
                                 ))}
                             </List>
-                            {/* <Button sx={{ display: 'flex', justifyContent: 'canter', alignItems: 'center' }} variant="contained" href="" target="_blank" startIcon={<GitHubIcon />}>
+                             <Button sx={{ display: 'flex', justifyContent: 'canter', alignItems: 'center' }} variant="contained" href="https://github.com/Priyank-Vaidya/OSProjects" target="_blank" startIcon={<GitHubIcon />}>
                                 Github
-                            </Button> */}
+                            </Button> 
                         </Box>
                     </Typography>
                 </Box>
