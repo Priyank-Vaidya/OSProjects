@@ -1,21 +1,22 @@
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
+// import CssBaseline from '@mui/material/CssBaseline';
 import { useState } from 'react';
-import Header from './components/Header';
+// import Header from './components/Header';
 import Home from './components/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import RoundRobins from './components/RoundRobins'
 import Output from './components/Output';
-
+import HomePage from './components/HomePage';
 function App() {
   
   return (
     <BrowserRouter>
-      <CssBaseline />
+      {/* <CssBaseline />
       <Header 
-      />
+      /> */}
       
       <Routes>
+        <Route path="/home" element={<HomePage />} />
         <Route path="/" element={<Home />} />
         <Route path="/roundrobins" element={<RoundRobins />} />
         <Route path="/output" element={<Output />} />

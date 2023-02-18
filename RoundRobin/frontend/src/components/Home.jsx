@@ -1,7 +1,8 @@
 import { Container } from '@mui/material'
 import React from 'react'
 import Card from './Card'
-
+import CssBaseline from '@mui/material/CssBaseline';
+import Header from './Header';
 export default function Home() {
     const algorithms = [
         {
@@ -12,7 +13,10 @@ export default function Home() {
         }  
     ]
     return (
+        
         <Container style={{marginTop: "30px"}}>
+             <CssBaseline />
+             <Header/>
             <Container style={{ marginTop: "30px", marginBottom: "20px", display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "20px" }}>
                 {algorithms
                     .filter(algorithm => !algorithm.isThreaded)
