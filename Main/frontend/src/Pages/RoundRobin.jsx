@@ -12,7 +12,7 @@ export const RoundRobin = () => {
       </div>
       {/* //we need to flex this */}
       <div className='flex gap-10'>
-        <img src={img} className='w-5/12 rounded-xl ml-10'></img>
+        <img src={img} alt="roundrobin" className='w-5/12 rounded-xl ml-10'></img>
         <div> 
           <ul className='list-disc p-8 text-[20px]'>
             <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard d only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was  </li>

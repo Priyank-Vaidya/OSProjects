@@ -5,6 +5,7 @@ import {ScanCscan} from "./Pages/ScanCscan";
 import {Bankers} from "./Pages/Bankers";
 import {MRU} from "./Pages/MRU";
 import './App.css';
+import { BankersAlgo } from './Algorithms/BankersAlgo';
 import { AboutUs } from './Pages/AboutUs';
 
 function App() {
@@ -12,12 +13,15 @@ function App() {
     <BrowserRouter>
     <div className="App">
       <Routes>
-        <Route path="/" element={<HomePage/>} />
-        <Route path="/roundrobin" element={<RoundRobin/>}/>
-        <Route path="/scan-cscan" element={<ScanCscan/>}/>
-        <Route path="/bankersAlgorithm" element = {<Bankers/>}/>
-        <Route path="/MRU" element ={<MRU/>}/>
-        <Route path="/about" element={<AboutUs/>}/>
+        <Route exact path="/" element={<HomePage/>} />
+        <Route exact path="/roundrobin" element={<RoundRobin/>}/>
+        <Route exact path="/scan-cscan" element={<ScanCscan/>}/>
+        <Route exact path="/bankersAlgorithm" element = {<Bankers/>}/>
+        <Route exact path="/MRU" element ={<MRU/>}/>
+        <Route exact path="/about" element={<AboutUs/>}/>
+        <Route  path="/simulation_bankers" element={<BankersAlgo/>}/>
+
+
       </Routes>
 
     </div>

@@ -1,3 +1,14 @@
+import React from 'react'
+
+export const CSCAN_SCAN = () => {
+  return (
+    <div>CSCAN_SCAN</div>
+  )
+}
+
+
+
+
 let exeBtn = document.getElementById("executeButton");
 let addTrack = document.getElementById("addTrackBtn");
 let requestedArray = [];

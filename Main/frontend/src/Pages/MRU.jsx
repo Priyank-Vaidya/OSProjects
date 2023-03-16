@@ -11,12 +11,12 @@ export const MRU = () => {
       <div className='font-Gloock bg-[#19191c] text-white pb-10'>
 
 
-        <div className='heading p-10 text-center hover:text-red-600 duration-500 text-[50px]'>
+        <div className='heading p-10 text-center hover:text-yellow-600 duration-500 text-[50px]'>
           MRU Algorithm
         </div>
         {/* //we need to flex this */}
         <div className='flex gap-10'>
-          <img src={img} className='w-5/12 rounded-xl ml-10'></img>
+          <img src={img} alt="MRU" className='w-5/12 rounded-xl ml-10'></img>
           <div>
             <ul className='list-disc p-8 text-[20px]'>
               <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard d only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was  </li>
@@ -26,7 +26,7 @@ export const MRU = () => {
           </div>
         </div>
         {/* direct to simulator */}
-        <button className='p-10 text-black border-2 border-black hover:border-white bg-red-500 hover:bg-red-700 duration-700 hover:text-white rounded-3xl text-[20px] left-3/4 relative mt-4 items-center '>Go to Simulation</button>
+        <button className='p-10 text-black border-2 border-black hover:border-white bg-yellow-500 hover:bg-yellow-700 duration-700 hover:text-white rounded-3xl text-[20px] left-3/4 relative mt-4 items-center '>Go to Simulation</button>
 
 
 
