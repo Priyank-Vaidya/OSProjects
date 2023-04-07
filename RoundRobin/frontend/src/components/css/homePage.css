@@ -54,7 +54,7 @@
         z-index:0;
         position:absolute;
          
-        transition: all 0.3s ease-in-out;
+        transition: all 0.2s ease-in-out;
       }
       .header:hover{
         background-position: 0%;
