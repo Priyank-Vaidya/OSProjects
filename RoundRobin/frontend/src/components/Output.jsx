@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Container, Box, TableContainer, Paper, Table, TableHead, TableRow, TableCell, TableBody, Typography, Divider } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import GanttChart from "react-gantt-chart";
 
 function Output() {
     const [processes, setProcesses] = React.useState([]);
@@ -70,5 +71,6 @@ function Output() {
         </div>
     )
 }
+
 
 export default Output
